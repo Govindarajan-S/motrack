@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MoTrack</string>
+    <string name="description">Description</string>
+    <string name="cost">Cost</string>
+    <string name="btn_save">Save</string>
+    <string name="hint_description">Ex. Grocery</string>
+    <string name="hint_cost">Ex. 500.50</string>
+    <string name="hint_note">Ex. Oil, Vegetables</string>
+    <string name="note">Note</string>
+</resources>
