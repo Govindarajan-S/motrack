@@ -24,5 +24,11 @@ public final class MoTrackExpenseContract {
                 Expense.COLUMN_NAME_NOTE + " TEXT," +
                 Expense.COLUMN_NAME_CREATE_DATE + " TEXT," +
                 Expense.COLUMN_NAME_MODIFIED_DATE + " TEXT)";
+
+        static final String SQL_SELECT_ENTRIES =
+                "SELECT " + Expense.COLUMN_NAME_DESCRIPTION + ", " +
+                        Expense.COLUMN_NAME_COST + ", " +
+                        Expense.COLUMN_NAME_NOTE + " FROM " +
+                        Expense.TABLE_NAME;
     }
 }

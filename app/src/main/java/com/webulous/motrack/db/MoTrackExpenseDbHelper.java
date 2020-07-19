@@ -4,6 +4,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.webulous.motrack.dummy.ExpenseContent;
+
+import java.util.List;
+
 public class MoTrackExpenseDbHelper extends SQLiteOpenHelper {
 
     public static final int DATABASE_VERSION = 1;

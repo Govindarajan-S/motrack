@@ -42,6 +42,7 @@ public class ExpensePageActivity extends AppCompatActivity {
 
         long newRowId = db.insert(MoTrackExpenseContract.Expense.TABLE_NAME, null, values);
         finish();
+        startActivity(getParentActivityIntent());
     }
 
     /**
