@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.webulous.motrack.db.MoTrackExpenseContract;
 import com.webulous.motrack.db.MoTrackExpenseDbHelper;
@@ -42,7 +43,10 @@ public class ExpensePageActivity extends AppCompatActivity {
 
         long newRowId = db.insert(MoTrackExpenseContract.Expense.TABLE_NAME, null, values);
         finish();
-        startActivity(getParentActivityIntent());
+        Intent expenseIntent = new Intent(this, MainActivity.class);
+        startActivity(expenseIntent);
+        String toastMessage = "Saved!";
+        Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT).show();
     }
 
     /**

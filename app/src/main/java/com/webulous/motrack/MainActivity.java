@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         expenseLayoutManager = new LinearLayoutManager(this);
         expenseRecyclerView.setLayoutManager(expenseLayoutManager);
 
-//        expenseAdapter = new ExpenseRecyclerViewAdapter(ExpenseContent.ITEMS);
         expenseAdapter = new ExpenseRecyclerViewAdapter(getExpenseEntries());
         expenseRecyclerView.setAdapter(expenseAdapter);
     }
